@@ -230,8 +230,7 @@ body{
   display: none;
 }
 
-
-  }
+}
 
 
 /* MOBILE CSS */
@@ -473,19 +472,92 @@ ul {
       height: auto;
       width: 30px;
   }
+
   
-  
-}
-.wrapper-div{
-  position: absolute;
-  left: 4%;
-}
-.wrapper-div p{
-  position: absolute;
-  top: 20%;
-  left: 20%;
 }
 
+
+/* common */
+.ribbon {
+  width: 250px;
+  height: 120px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+}
+.img-svg{
+  height: auto;
+  width: 120px;
+}
+
+
+.top-left-ribbon {
+  position: absolute;
+  display: block;
+  width: auto;
+  margin-top: 10px;
+  padding: 10px 10px;
+  background-color: #FFA72F;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 12px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+} 
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+.ribbon-top-left::before {
+  top: 0;
+  right: 0;
+}
+.ribbon-top-left::after {
+  bottom: 0;
+  left: 0;
+}
+.ribbon-top-left span {
+  left: 0px;
+  top: -10px;
+  transform: rotate(0deg);
+}
+
+.ribbon-most-popular{
+  position: absolute;
+  display: block;
+  width: auto;
+  margin-top: 10px;
+  padding: 10px 10px;
+  background-color: #1E73BE;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 12px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+.ribbon-trending{
+  position: absolute;
+  display: block;
+  width: auto;
+  margin-top: 10px;
+  padding: 10px 10px;
+  background-color: #8224E3;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 12px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
 
 
 
