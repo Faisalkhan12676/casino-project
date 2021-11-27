@@ -47,6 +47,7 @@ body {
 }
 
 .allsitesare {
+  height: auto;
   display: flex;
   margin: 0px 30px;
 }
@@ -261,6 +262,7 @@ body {
     background: rgb(88, 88, 88);
   }
   .allsitesare {
+    padding: 10px 0px;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -570,8 +572,14 @@ ul {
   clip-path: polygon(75% 0%, 90% 50%, 75% 100%, 0% 100%, 0 48%, 0% 0%);
 }
 .img-icon {
-  height: 20px;
-  width: 30px;
+  height: auto;
+  width: 15px;
+  margin: 0px 10px;
+}
+.img-iconn{
+  height: auto;
+  width: 13px;
+  margin: 0px 10px;
 }
 
 
